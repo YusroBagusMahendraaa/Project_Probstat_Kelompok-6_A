@@ -1,0 +1,80 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f3740;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #1f3740;
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 50px; 
+            font-size: 40px;
+            color: #ffffff;
+        }
+        h2 {
+            text-align: justify;
+            font-size: 16px;
+            color:#00a8b0
+            
+        }
+        .form-group {
+
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 200px; /* lebar input */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #00a8b0;
+            border-radius: 20px;
+            text-align: center; /* teks di tengah */
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .button-group button { /*tambahkan data, hitung regresi*/
+            flex: 10;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+        
+        }
+        .button-group button:first-child {
+            background-color: #00a8b0;
+            color: white;
+        }
+        .button-group button:last-child {
+            background-color: #008CBA;
+            color: #000000;
+        }
+        #dataPoints, #output {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 15px; 
+        }
+        svg {
+            margin-top: 50px;
+            border: 2px solid #008CBA;
+            border-radius: 10px;
+            width: 600; /* lebar SVG */
+            height: 400px; /*  tinggi SVG */
+        }
