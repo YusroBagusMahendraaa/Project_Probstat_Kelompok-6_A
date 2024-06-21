@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regresi Linier Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Regresi Linier Sederhana</h1>
+        <h2>Menghitung regresi linier sederhana menentukan hubungan antara dua variabel (misalnya, X dan Y) dengan menggunakan persamaan garis lurus dalam bentuk Y = a+bX.</h2>
+        <form id="dataForm">
+            <div class="form-group">
+                <label for="tasks">Lama Belajar (x):</label>
+                <input type="number" id="tasks" required>
+            </div>
+            <div class="form-group">
+                <label for="studyTime">Hasil Nilai (y):</label>
+                <input type="number" id="studyTime" required>
+            </div>
+            <div class="button-group">
+                <button type="button" onclick ="addData()">Tambahkan Data</button>
+                <button type="button" onclick ="calculateRegression()">Hitung Regresi</button>
+            </div>
+        </form>
+        <div id="dataPoints"></div>
+        <div id="output"></div>
+        <svg id="chart" width="400" height="400"></svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
